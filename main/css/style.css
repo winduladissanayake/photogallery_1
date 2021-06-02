@@ -1,0 +1,427 @@
+body{
+  align-content: center;
+  background-color: #ffc8dd;
+}
+
+.homehead {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url(../images/main/home.jpg);
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.trackshead {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url(../images/main/tracks.jpg);
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.showshead {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url(../images/main/shows.jpg);
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.abouthead{
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url(../images/main/about.jpg);
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li {
+  margin-right: 1.5em;
+  text-decoration: none;
+}
+
+
+.head_title {
+  text-align: center;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  color: #FFFFFF;
+  font-size: 625%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.head_subs {
+  text-align: center;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: monospace,sans-serif,serif;
+  -moz-font-family: monospace,sans-serif,serif;
+  -ms-font-family: monospace,sans-serif,serif;
+  -o-font-family: monospace,sans-serif,serif;
+  font-family: monospace,sans-serif,serif;
+  color: #FFFFFF;
+  font-size: 180%;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fullcard{
+  background-color: #cdb4db;
+}
+
+.fullcard2{
+  background-color: #bde0fe;
+}
+
+/*--Scroll down------------------------------*/
+
+.chevron {
+  position: absolute;
+  align-content: center;
+  width: 56px;
+  height: 16px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* popular tracks----------------------------------*/
+
+.head_popular{
+  margin-top: 2%;
+  padding-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  font-size: 300%;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  text-align: center;
+}
+
+.rounded-4 { border-radius: .5rem; }
+.rounded-5 { border-radius: 1rem; }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+
+.card-title{
+  text-align: center;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  padding-top: 100px;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  color: #FFFFFF;
+  font-size: 200%;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.back{
+  background-color: #ffc8dd ;
+}
+
+
+/* upcoming events----------------------------------*/
+
+.head_upcoming{
+  font-size: 300%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  text-align: center;
+}
+
+.title_upcoming{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.tag_upcoming{
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.p_upcoming{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+
+.title_upcoming2{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+.tag_upcoming2{
+  text-align: center;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+.p_upcoming2{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+
+/* footer ------------------------------------------*/
+
+footer{
+  margin-top: 4%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.list-item{
+  font-size: 100%;
+  line-height: 50px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.head_footer {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 2%;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  text-align: center;
+}
+
+/*------font awesome------------------*/
+/* Style all font awesome icons */
+.fa {
+  margin: 6px;
+  padding: 6px;
+  font-size: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*--about-------------------------------*/
+
+.card-name{
+  text-align: center;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  padding-top: 230px;
+  font-family: fantasy,sans-serif,serif;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  color: #FFFFFF;
+  font-size: 200%;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.p_message{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  text-align: justify;
+}
+
+.letter-name{
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: monospace,sans-serif,serif;
+  -moz-font-family: monospace,sans-serif,serif;
+  -ms-font-family: monospace,sans-serif,serif;
+  -o-font-family: monospace,sans-serif,serif;
+  font-family: monospace,sans-serif,serif;
+  font-size: 150%;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*--sign in--------------------------------------*/
+.signinform{
+  padding-top: 130px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.signupform{
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+
+.form-group{
+  margin-top: 15px;
+}
+
+.form-control{
+  margin-top: 8px;
+
+}
+
+.signin_title {
+  text-align: center;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  -webkit-font-family: fantasy, sans-serif,serif;
+  -moz-font-family: fantasy, sans-serif,serif;
+  -ms-font-family: fantasy, sans-serif,serif;
+  -o-font-family: fantasy, sans-serif,serif;
+  font-family: fantasy, sans-serif,serif;
+  font-size: 250%;
+  padding-bottom: 20px;
+}
+
+.signin_subs {
+  text-align: left;
+  -webkit-font-style: normal;
+  -moz-font-style: normal;
+  -ms-font-style: normal;
+  -o-font-style: normal;
+  font-style: normal;
+  font-size: 110%;
+}
